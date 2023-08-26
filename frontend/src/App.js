@@ -32,6 +32,9 @@ const App = () => {
   return (
     <div className="app">
       <Navbar />
+
+      //form sections
+      
       {section >= 0 && section < 5 && <PersonalForm handleNext = {handleIncrease} />}
       {section >= 1 && section < 5 && <AcademicForm handleNext = {handleIncrease} />}
       {section >= 2 && section < 5 && <Colleges handleNext = {handleIncrease} />}
