@@ -33,15 +33,15 @@ const App = () => {
     <div className="app">
       <Navbar />
 
-      //form sections
-      
+   
+
       {section >= 0 && section < 5 && <PersonalForm handleNext = {handleIncrease} />}
       {section >= 1 && section < 5 && <AcademicForm handleNext = {handleIncrease} />}
       {section >= 2 && section < 5 && <Colleges handleNext = {handleIncrease} />}
       {section >= 3 && section < 5 && <Documents handleNext = {handleIncrease} />}
       {section >= 4 && section < 5 && <Payments handleSubmit = {handleSubmit} />}
 
-      //on succesfull payment
+      
       {section == 5 && <Thankyou />}
     </div>
   );
